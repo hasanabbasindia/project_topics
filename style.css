@@ -1,0 +1,11 @@
+.my-list{
+    font-family: 'Georgia', serif;
+    /* Optionally, you can specify a fallback font-family in case Georgia is not available */
+    /* font-family: 'Georgia', 'Times New Roman', serif; */
+  }
+
+  .my-list2{
+    font-family: 'Times New Roman', serif;
+    /* Optionally, you can specify a fallback font-family in case Georgia is not available */
+    /* font-family: 'Georgia', 'Times New Roman', serif; */
+  }
