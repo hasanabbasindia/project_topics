@@ -1,11 +1,47 @@
-.my-list{
-    font-family: 'Georgia', serif;
-    /* Optionally, you can specify a fallback font-family in case Georgia is not available */
-    /* font-family: 'Georgia', 'Times New Roman', serif; */
-  }
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
 
-  .my-list2{
+h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.my-list, .my-list2 {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-list li, .my-list2 li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.my-list li:last-child, .my-list2 li:last-child {
+    border-bottom: none;
+}
+
+.my-list a, .my-list2 a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.my-list a:hover, .my-list2 a:hover {
+    text-decoration: underline;
+}
+
+.my-list2 {
     font-family: 'Times New Roman', serif;
-    /* Optionally, you can specify a fallback font-family in case Georgia is not available */
-    /* font-family: 'Georgia', 'Times New Roman', serif; */
-  }
+}
+
+.my-list {
+    font-family: 'Georgia', serif;
+}
