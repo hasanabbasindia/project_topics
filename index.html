@@ -1,69 +1,216 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+
+    h3 {
+      color: #333;
+      margin-bottom: 10px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .my-list,
+    .my-list2 {
+      list-style-type: none;
+      padding: 0;
+      margin: 40px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+
+    .my-list li,
+    .my-list2 li {
+      margin-left: 20px;
+      padding: 10;
+      margin: 15px;
+      background: #fff;
+      border-radius: 5px;
+      box-shadow: 0 0 100px rgba(0, 0, 0, 0.2);
+      padding-left: 10px;
+      padding-bottom: 10px;
+    }
+
+    .my-list li:last-child,
+    .my-list2 li:last-child {
+      border-bottom: none;
+    }
+
+    .my-list a,
+    .my-list2 a {
+      color: #007BFF;
+      text-decoration: none;
+    }
+
+    .my-list a:hover,
+    .my-list2 a:hover {
+      text-decoration: underline;
+    }
+
+    .my-list2 {
+      font-family: 'Times New Roman', serif;
+    }
+
+    .my-list {
+      font-family: 'Georgia', serif;
+    }
+
+    .dropdown-content {
+      display: none;
+    }
+
+    .dropdown-icon {
+      width: 0;
+      height: 0;
+      margin-left: 5px;
+      border-left: 5px solid transparent;
+      border-right: 5px solid transparent;
+      border-top: 5px solid #333;
+      transition: transform 0.3s ease;
+    }
+
+    .dropdown-icon.open {
+      transform: rotate(180deg);
+    }
+  </style>
 </head>
+
 <body>
 
-    <ol class="my-list2">
-        <h3>Tools-</h3>
-        <li>Select a topic : Ex- I want ai detector which detects plant disease [Plant Disease Detector]</li>
-        <li>Use Blackbox for code n GitHub repository <a href="https://www.useblackbox.io/" target="_blank">visit blackbox</a></li>
-        <li>For summary n code summary us ChatGPT <a href="https://chat.openai.com/">visit ChatGPT</a></li>
-        <li>Journals Reader AI Tool <i>Helps in reading IEEE </i> <a href="https://typeset.io/" target="_blank">visit scispace</a></li>
-        <li>Free diagram Tools- <i>For report n presentation </i> <a href="https://online.visual-paradigm.com/free-tools/" target="_blank"> visit site</a></li>
-        <li>PPT design <i>Presentation or Slide </i> <a href="https://www.beautiful.ai/presentations" target="_blank"> visit Beautiful.ai</a></li>
-        <li>If required latex format for report <a href="https://mathpix.com/pdf-to-latex" target="_blank"> site_PDFtoLatex</a></li>
-        <li>Video editing is the last task...</li>
-      </ol>
-<br><br>
-      <ul class="my-list">
-        <h3>Topics selected by our group <i>(via WhatsApp)</i></h3>
-        <li>Toward Reliable Controller Placements in Software-Defined Network Using Constrained Multi-Objective Optimization Technique  <a href="https://drive.google.com/file/d/1MWru-Fm3qUMV-3_OAZhiDWcJAVxnCGh6/view?usp=sharing" target="_blank"> ._pdf</a></li>
-        <li>Hindrances for e-Government adoption by government officials in small-sized local governments in Thailand  <a href="https://drive.google.com/file/d/1LE62ySwEMjQIzYJ2I8RxwvXg6GMvkjdJ/view?usp=sharing" target="_blank"> ._pdf</a></li>
-        <li>A Novel Method of Requirements Analysis for Big Data Projects  <a href="https://drive.google.com/file/d/1ztJdLdtwv_G8EJZOtPQj2kLL4nz0kWGg/view?usp=sharing" target="_blank"> ._pdf</a></li>
-        <li>Biomedical IoT: Enabling Technologies, Architectural Elements, Challenges, and Future Directions  <a href="https://drive.google.com/file/d/1cM4q8UJYcLUJkhPHgYXiYcmVro2YYjLV/view?usp=sharing" target="_blank"> ._pdf</a></li>
-        <li>Signature Recognition and Detection of Skilled Forgeries Using Image Transformation and Multistream CNN  <a href="https://drive.google.com/file/d/1UmvM3Y99EftfR_GS2py8ygkA9rTufCcl/view?usp=sharing" target="_blank"> ._pdf</a></li>
-        <li>Body-part Identification Learning for Preschool Children Using Internet of Things  <a href="https://drive.google.com/file/d/1eOcQhYpXpRK03MQdePowT1eF1PgWutpa/view?usp=sharing" target="_blank"> ._pdf</a></li>
-        <li>E-Voting System Using Blockchain and Homomorphic Encryption  <a href="https://drive.google.com/file/d/1oMaVWd3p1_Lyp2a3rgMhO9DAAclxN_Pp/view?usp=sharing" target="_blank"> ._pdf</a></li>
-        <li>Face Identification and Real Time Emotion Tracker  <a href="https://drive.google.com/file/d/1RFOZmesMvgSkAn-rTBAtNdVRg2cyj63p/view?usp=sharing" target="_blank"> ._pdf</a></li>
-        <li>Detection of Fake News using Recurrent Neural Network  <a href="https://drive.google.com/file/d/19SpLFlTCWX2umrZb9pvY5pOBX5zP-JhM/view?usp=sharing" target="_blank"> ._pdf</a></li>
-        <li>Music Player Based on Emotion Detection Using CNN  <a href="https://drive.google.com/file/d/1hy-yWQo6bIeRTRpfEg4YKuKw1vSTz2Ol/view?usp=sharing" target="_blank"> ._pdf</a></li>
-        <li>Empirical Evaluation of Traffic Shaping Algorithms for Time Sensitive Networking  <a href="https://drive.google.com/file/d/1Jp_3PSWHI1iFqD9m2Rl35Kd-pcub0xLo/view?usp=sharing" target="_blank"> ._pdf</a></li>
-        <li>Federated Machine Learning for Detection of
-            Skin Diseases and Enhancement of Internet of
-            Medical Things (IoMT) Security  <a href="https://drive.google.com/file/d/1OpdRAStSOzFq9zdchNceFR3r4JZyBP0E/view?usp=sharing" target="_blank"> ._pdf</a></li>
-        <li>Deep Multi-Exposure Image Fusion for Dynamic Scenes  <a href="https://drive.google.com/file/d/1o6ZkA8y0CLkn0v37VeEk8Ja_JHCbnayc/view?usp=sharing" target="_blank"> ._pdf</a></li>
-      </ul>
-      
-      <br><br>
+  <ol class="my-list2">
+    <h3 style="
+    border-right-width: 0px;
+    margin-left: 20px;">Tools-</h3>
+    <li>Select a topic : Ex- I want ai detector which detects plant disease [Plant Disease Detector]</li>
+    <li>Use Blackbox for code n GitHub repository <a href="https://www.useblackbox.io/" target="_blank">visit
+        blackbox</a></li>
+    <li>For summary n code summary us ChatGPT <a href="https://chat.openai.com/">visit ChatGPT</a></li>
+    <li>Journals Reader AI Tool <i>Helps in reading IEEE </i> <a href="https://typeset.io/" target="_blank">visit
+        scispace</a></li>
+    <li>Free diagram Tools- <i>For report n presentation </i> <a href="https://online.visual-paradigm.com/free-tools/"
+        target="_blank"> visit site</a></li>
+    <li>PPT design <i>Presentation or Slide </i> <a href="https://www.beautiful.ai/presentations" target="_blank"> visit
+        Beautiful.ai</a></li>
+    <li>If required latex format for report <a href="https://mathpix.com/pdf-to-latex" target="_blank">
+        site_PDFtoLatex</a></li>
+    <li>Video editing is the last task...</li>
 
-    <ul class="my-list">
-        <h3><i>More...</i></h3>
+  </ol>
+  <br><br>
+
+  <div class="my-list2">
+    <div class="dropdown">
+      <h3 class="dropdown-btn" style="
+      border-right-width: 0px;
+      margin-left: 20px;
+      margin-right: 950px;">Topics selected by our group <i>(via WhatsApp)</i> <span class=" dropdown-icon"></span>
+      </h3>
+      <ul class="my-list dropdown-content">
+        <li>Toward Reliable Controller Placements in Software-Defined Network Using Constrained Multi-Objective
+          Optimization Technique <a
+            href="https://drive.google.com/file/d/1MWru-Fm3qUMV-3_OAZhiDWcJAVxnCGh6/view?usp=sharing" target="_blank">
+            ._pdf</a></li>
+        <li>Hindrances for e-Government adoption by government officials in small-sized local governments in Thailand <a
+            href="https://drive.google.com/file/d/1LE62ySwEMjQIzYJ2I8RxwvXg6GMvkjdJ/view?usp=sharing" target="_blank">
+            ._pdf</a></li>
+        <li>A Novel Method of Requirements Analysis for Big Data Projects <a
+            href="https://drive.google.com/file/d/1ztJdLdtwv_G8EJZOtPQj2kLL4nz0kWGg/view?usp=sharing" target="_blank">
+            ._pdf</a></li>
+        <li>Biomedical IoT: Enabling Technologies, Architectural Elements, Challenges, and Future Directions <a
+            href="https://drive.google.com/file/d/1cM4q8UJYcLUJkhPHgYXiYcmVro2YYjLV/view?usp=sharing" target="_blank">
+            ._pdf</a></li>
+        <li>Signature Recognition and Detection of Skilled Forgeries Using Image Transformation and Multistream CNN <a
+            href="https://drive.google.com/file/d/1UmvM3Y99EftfR_GS2py8ygkA9rTufCcl/view?usp=sharing" target="_blank">
+            ._pdf</a></li>
+        <li>Body-part Identification Learning for Preschool Children Using Internet of Things <a
+            href="https://drive.google.com/file/d/1eOcQhYpXpRK03MQdePowT1eF1PgWutpa/view?usp=sharing" target="_blank">
+            ._pdf</a></li>
+        <li>E-Voting System Using Blockchain and Homomorphic Encryption <a
+            href="https://drive.google.com/file/d/1oMaVWd3p1_Lyp2a3rgMhO9DAAclxN_Pp/view?usp=sharing" target="_blank">
+            ._pdf</a></li>
+        <li>Face Identification and Real Time Emotion Tracker <a
+            href="https://drive.google.com/file/d/1RFOZmesMvgSkAn-rTBAtNdVRg2cyj63p/view?usp=sharing" target="_blank">
+            ._pdf</a></li>
+        <li>Detection of Fake News using Recurrent Neural Network <a
+            href="https://drive.google.com/file/d/19SpLFlTCWX2umrZb9pvY5pOBX5zP-JhM/view?usp=sharing" target="_blank">
+            ._pdf</a></li>
+        <li>Music Player Based on Emotion Detection Using CNN <a
+            href="https://drive.google.com/file/d/1hy-yWQo6bIeRTRpfEg4YKuKw1vSTz2Ol/view?usp=sharing" target="_blank">
+            ._pdf</a></li>
+        <li>Empirical Evaluation of Traffic Shaping Algorithms for Time Sensitive Networking <a
+            href="https://drive.google.com/file/d/1Jp_3PSWHI1iFqD9m2Rl35Kd-pcub0xLo/view?usp=sharing" target="_blank">
+            ._pdf</a></li>
+        <li>Federated Machine Learning for Detection of Skin Diseases and Enhancement of Internet of Medical Things
+          (IoMT)
+          Security <a href="https://drive.google.com/file/d/1OpdRAStSOzFq9zdchNceFR3r4JZyBP0E/view?usp=sharing"
+            target="_blank"> ._pdf</a></li>
+        <li>Deep Multi-Exposure Image Fusion for Dynamic Scenes <a
+            href="https://drive.google.com/file/d/1o6ZkA8y0CLkn0v37VeEk8Ja_JHCbnayc/view?usp=sharing" target="_blank">
+            ._pdf</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <br><br>
+
+  <div class="my-list2">
+    <div class="dropdown">
+      <h3 class="dropdown-btn" style="
+      border-right-width: 0px;
+      margin-left: 20px;
+      margin-right: 950px;"><i>More...</i> <span class="dropdown-icon"></span></h3>
+      <ul class="my-list dropdown-content">
         <li>"AutoML Pipeline: An Automated Machine Learning System for Large Datasets"</li>
-            <li>"BlockVote: A Blockchain-Based Voting System for Secure and Transparent Elections"</li>
-            <li>"Deepfake Detection and Prevention System: A Machine Learning Approach"</li>
-            <li>"Personalized Medical Treatment Recommendation System using Machine Learning"</li>
-            <li>"NLG NewsBot: A Natural Language Generation Tool for Writing News Articles and Reports"</li>
-            <li>"Predictive Traffic Congestion System with Route Optimization using Machine Learning"</li>
-            <li>"Generative Music System: Personalized Music Generation using Machine Learning"</li>
-            <li>"Real-Time Emotion Recognition System for Virtual Communication using Facial Recognition"</li>
-            <li>"Autonomous Drone for Package Delivery: Design and Implementation"</li>
-            <li>"Distributed Database System for Secure and Fast Data Access: Design and Implementation"</li>
-            <li>"Earthquake Prediction Model using Machine Learning and Data Analysis"</li>
-            <li>"Automated Fake News and Misinformation Detection System using Machine Learning"</li>
-            <li>"Virtual Reality System for Surgical Simulation and Training"</li>
-            <li>"Cognitive Computing System for Personalized Learning and Education"</li>
-            <li>"Autonomous Robot for Warehouse Management and Inventory Tracking"</li>
-            <li>"Natural Language Understanding for Customer Service Chatbots"</li>
-            <li>"Secure and Private Data Sharing in a Multi-Party Setting using Cryptography"</li>
-            <li>"Computer Vision System for Human Behavior Recognition and Tracking in Public Spaces"</li>
-            <li>"Machine Learning Model for Disease Outbreak Prediction and Public Health Management"</li>
-            <li>"Personalized Advertisement Generation System using Machine Learning</li>
-    </ul>
+        <li>"BlockVote: A Blockchain-Based Voting System for Secure and Transparent Elections"</li>
+        <li>"Deepfake Detection and Prevention System: A Machine Learning Approach"</li>
+        <li>"Personalized Medical Treatment Recommendation System using Machine Learning"</li>
+        <li>"NLG NewsBot: A Natural Language Generation Tool for Writing News Articles and Reports"</li>
+        <li>"Predictive Traffic Congestion System with Route Optimization using Machine Learning"</li>
+        <li>"Generative Music System: Personalized Music Generation using Machine Learning"</li>
+        <li>"Real-Time Emotion Recognition System for Virtual Communication using Facial Recognition"</li>
+        <li>"Autonomous Drone for Package Delivery: Design and Implementation"</li>
+        <li>"Distributed Database System for Secure and Fast Data Access: Design and Implementation"</li>
+        <li>"Earthquake Prediction Model using Machine Learning and Data Analysis"</li>
+        <li>"Automated Fake News and Misinformation Detection System using Machine Learning"</li>
+        <li>"Virtual Reality System for Surgical Simulation and Training"</li>
+        <li>"Cognitive Computing System for Personalized Learning and Education"</li>
+        <li>"Autonomous Robot for Warehouse Management and Inventory Tracking"</li>
+        <li>"Natural Language Understanding for Customer Service Chatbots"</li>
+        <li>"Secure and Private Data Sharing in a Multi-Party Setting using Cryptography"</li>
+        <li>"Computer Vision System for Human Behavior Recognition and Tracking in Public Spaces"</li>
+        <li>"Machine Learning Model for Disease Outbreak Prediction and Public Health Management"</li>
+        <li>"Personalized Advertisement Generation System using Machine Learning"</li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    document.querySelectorAll('.dropdown-btn').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        button.querySelector('.dropdown-icon').classList.toggle('open');
+      });
+    });
+  </script>
 
 </body>
+
 </html>
